@@ -102,7 +102,7 @@
 
 /* Accent Button */
 .btn.accent {
-  color:white;
+  color:var(--text-color);
   background-color: var(--accent-color);
 }
 .btn.accent:hover:not(:disabled),

@@ -166,7 +166,7 @@ body:has(dialog) {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 65vh;
 }
 .section-fill h2 {
   font-size: 1.5rem;

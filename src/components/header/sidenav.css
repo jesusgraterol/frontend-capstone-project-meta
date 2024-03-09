@@ -1,31 +1,47 @@
 
-#mainHeader {
+.sidenav-container {
+  width: 100%;
+  height:100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index:2;
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav-container > section {
+  width: 270px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
+  height: 100%;
+  animation: 0.3s sidenav-slide-left;
+}
+@keyframes sidenav-slide-left {
+  from { transform: translateX(540px)}
+  to { transform: translateX(0) }
+}
+
+.sidenav-container > section > header {
+  display:flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 25px 15px;
+  padding: 10px;
 }
 
-#mainHeader img {
-  max-width: 200px;
+.sidenav-container > section > header h2 {
+  margin: 0;
+}
+
+.sidenav-container > section > ul li .btn {
+  width: 100%;
+  justify-content: flex-start;
 }
 
 
-#mainHeader nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-#mainHeader nav .btn {
-  color: var(--primary-color);
-}
-
-#mainHeader nav .icon-btn {
-  display: none;
-}
 
 
 
@@ -65,9 +81,6 @@
  */
  @media (min-width: 768px) and (max-width: 1024px) {
  
-  #mainHeader nav  .btn { display: none;}
-
-  #mainHeader nav .icon-btn { display: flex;}
  }
  
  
@@ -80,9 +93,6 @@
  */
  @media (min-width: 481px) and (max-width: 767px) {
  
-  #mainHeader nav  .btn { display: none;}
-
-  #mainHeader nav .icon-btn { display: flex;}
  }
  
  
@@ -94,15 +104,5 @@
  * SCREEN: 480px to lower resolution mobiles
  */
  @media (max-width: 480px) {
-  #mainHeader {
-    padding: 15px 8px;
-  }
-  
-  #mainHeader img {
-    max-width: 180px;
-  }
-
-  #mainHeader nav  .btn { display: none;}
-
-  #mainHeader nav .icon-btn { display: flex;}
+ 
  }

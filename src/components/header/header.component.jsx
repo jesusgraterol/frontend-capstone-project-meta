@@ -1,6 +1,8 @@
 import './header.css';
-import useActiveRoute from '../../hooks/active-route/active-route.hook';
-import useNavigateApp from '../../hooks/navigate-app/navigate-app.hook';
+import { useState, useEffect } from 'react';
+import useActiveRoute from '../../hooks/active-route/active-route.hook.jsx';
+import useNavigateApp from '../../hooks/navigate-app/navigate-app.hook.jsx';
+import Sidenav from './sidenav.component.jsx';
 
 
 /**
@@ -9,6 +11,18 @@ import useNavigateApp from '../../hooks/navigate-app/navigate-app.hook';
 function Header() {
   const navigate =  useNavigateApp();
   const activeRoute = useActiveRoute();
+  const [ sidenavVisible, setSidenavVisible ] = useState(false);
+
+
+  // ensure the sidenav is closed whenever the route changes
+  useEffect(() => {
+      setSidenavVisible(false);
+  }, [ activeRoute ]);
+
+
+
+  // event handler to toggle the sidenav visibility status
+  const toggleSidenavVisibility = () => setSidenavVisible(!sidenavVisible);
 
 
 
@@ -56,12 +70,18 @@ function Header() {
 
         {/* Mobile Navigation */}
         <button className="icon-btn primary" 
-                /* onClick={toggleSidenavVisibility}  */
+                onClick={toggleSidenavVisibility}
                 aria-label="Toggle Side Navigation">
           <span className="md-icon" aria-hidden="true">menu</span>
         </button>
 
       </nav>
+
+      {/* Mobile Sidenav */}
+      {sidenavVisible && (
+        <Sidenav  activeRoute={activeRoute} 
+                  toggleSidenavVisibility={toggleSidenavVisibility} />
+      )}
 
     </header>
   )
