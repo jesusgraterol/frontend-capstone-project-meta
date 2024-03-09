@@ -1,0 +1,129 @@
+
+#mainFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: var(--primary-color);
+  padding: 35px 15px;
+  margin: 25px 0 0 0;
+  color: #FFFFFF;
+
+}
+
+#mainFooter section h3 {
+  margin: 0;
+}
+
+
+
+#mainFooter section.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#mainFooter section.logo img {
+  max-width: 100px;
+}
+
+
+#mainFooter section a:hover {
+  opacity: 0.5;
+}
+
+#mainFooter section.sitemap {
+  flex: 1;
+}
+
+
+
+
+#mainFooter section.contact {
+  flex: 1;
+}
+#mainFooter section.contact ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+#mainFooter section.connect {
+  flex: 1;
+}
+
+#mainFooter section.connect a img {
+  margin: 5px;
+  display: inline;
+  max-width: 32px;
+}
+
+
+
+/* **************************
+ * RESPONSIVE MEDIA QUERIES *
+ ************************** */
+
+/*
+ * DEVICE: Desktops
+ * SCREEN: 1281px to higher resolution desktops
+ */
+ @media (min-width: 1281px) {
+
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Laptops, Desktops
+ * SCREEN: B/w 1025px to 1280px
+ */
+ @media (min-width: 1025px) and (max-width: 1280px) {
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Tablets, Ipads
+ * SCREEN: B/w 768px to 1024px
+ */
+ @media (min-width: 768px) and (max-width: 1024px) {
+  #mainFooter {
+    flex-direction: column;
+  }
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Low Resolution Tablets, Mobiles (Landscape)
+ * SCREEN: B/w 481px to 767px
+ */
+ @media (min-width: 481px) and (max-width: 767px) {
+  #mainFooter {
+    flex-direction: column;
+  }
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Most of the Smartphones Mobiles (Portrait)
+ * SCREEN: 480px to lower resolution mobiles
+ */
+ @media (max-width: 480px) {
+ 
+    #mainFooter {
+      flex-direction: column;
+    }
+ }

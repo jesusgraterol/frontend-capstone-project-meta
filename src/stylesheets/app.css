@@ -45,17 +45,8 @@
   --text-color: #1f1d1d;
   --light-text-color: #696161;
 
-  --app-background-color: #f7f1f1;
-  --app-background-contrast-color: #e7e0e0;
-
-  --font-size: 16px;
+  --font-size: 20px;
   font-size: var(--font-size);
-
-  --app-header-height: 85px;
-  --app-header-height-mobile: 65px;
-
-  --app-section-header-height: 70px;
-  --app-section-header-height-mobile: 50px;
 }
 
 
@@ -140,7 +131,7 @@ html {
  ****** */
 body {
   font-family: "Markazi Text", sans-serif;
-  background-color: var(--app-background-color);
+  background-color: #FFFFFF;
   color: var(--text-color);
   overflow-y: auto;
   overflow-x: hidden;
@@ -159,10 +150,28 @@ body:has(dialog) {
  * APP CONTAINER *
  *************** */
 #appContainer {
-  min-height:100%;
+
+  
+}
+#appContainer > main > section {
+  animation: fadein 0.5s;
 }
 
 
+
+/* **************
+ * SECTION FILL *
+ ************** */
+.section-fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.section-fill h2 {
+  font-size: 1.5rem;
+  color: var(--light-text-color);
+}
 
 
 

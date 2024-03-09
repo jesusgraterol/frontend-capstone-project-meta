@@ -1,0 +1,75 @@
+
+header.sub-header {
+  background-color: var(--primary-color);
+  padding: 25px 15px;
+  margin: 0 0 25px 0;
+  text-align: center;
+  color:white;
+}
+
+
+
+
+/* **************************
+ * RESPONSIVE MEDIA QUERIES *
+ ************************** */
+
+/*
+ * DEVICE: Desktops
+ * SCREEN: 1281px to higher resolution desktops
+ */
+ @media (min-width: 1281px) {
+
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Laptops, Desktops
+ * SCREEN: B/w 1025px to 1280px
+ */
+ @media (min-width: 1025px) and (max-width: 1280px) {
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Tablets, Ipads
+ * SCREEN: B/w 768px to 1024px
+ */
+ @media (min-width: 768px) and (max-width: 1024px) {
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Low Resolution Tablets, Mobiles (Landscape)
+ * SCREEN: B/w 481px to 767px
+ */
+ @media (min-width: 481px) and (max-width: 767px) {
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Most of the Smartphones Mobiles (Portrait)
+ * SCREEN: 480px to lower resolution mobiles
+ */
+ @media (max-width: 480px) {
+  header.sub-header {
+    padding: 5px;
+    margin: 0 0 15px 0;
+  }
+
+ }
