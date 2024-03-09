@@ -5,16 +5,39 @@
 /* Reset */
 @import url('modules/reset.css');
 
+/* Font */
+@import url('modules/fonts.css');
+
+/* Material Icons */
+@import url('modules/material-icons.css');
+
+/* Utilities */
+@import url('modules/utilities.css');
+
+/* Typography */
+@import url('modules/typography.css');
+
+/* Buttons */
+@import url('modules/buttons.css');
+
+/* Anchors */
+@import url('modules/anchors.css');
+
+/* Form */
+@import url('modules/form.css');
+
+
+
 
 
 /* **********
  * GLOBALS  *
  ********** */
 :root {
-  --primary-color: #212121;
-  --primary-contrast-color: #000000;
-  --accent-color: #333333;
-  --accent-contrast-color: #212121;
+  --primary-color: #495E57;
+  --primary-contrast-color: #2a3632;
+  --accent-color: #F4CE14;
+  --accent-contrast-color: #ad9312;
 
   --success-color: #0f766e;
   --error-color: #991b1b;
@@ -64,6 +87,7 @@ hr {
 
 
 
+
 /* *******
  * LISTS *
  ******* */
@@ -73,6 +97,8 @@ ul, ol {
 ul li, ol li {
   margin: 15px 0;
 }
+
+
 
 
 
@@ -108,11 +134,12 @@ html {
 
 
 
+
 /* ******
  * BODY *
  ****** */
 body {
-  font-family: "Montserrat", "Roboto", sans-serif;
+  font-family: "Markazi Text", sans-serif;
   background-color: var(--app-background-color);
   color: var(--text-color);
   overflow-y: auto;
@@ -123,6 +150,8 @@ body {
 body:has(dialog) {
   overflow-y: hidden;
 }
+
+
 
 
 
