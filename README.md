@@ -56,14 +56,7 @@ $ npm run dev
 ## Running the Tests
 
 ```bash
-# Run the e2e tests
-$ npm run test:e2e
-
-# Run the integration tests
-$ npm run test:integration
-
-# Run the unit tests
-$ npm run test:unit
+$ npm test
 ```
 
 
@@ -73,7 +66,7 @@ $ npm run test:unit
 
 1. [x] Has the learner followed the design and implementation of the UX UI?
 2. [x] Are there appropriate accessibility tags applied?
-3. [ ] Does the web app contain unit tests?
-4. [ ] Is the booking form functional and applying validation?
+3. [x] Does the web app contain unit tests?
+4. [x] Is the booking form functional and applying validation?
 5. [x] Are the semantics and responsiveness of the web app correct?
 6. [x] Has the learner committed the project to a Git repository?

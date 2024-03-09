@@ -1,0 +1,109 @@
+#reservationsSection {
+
+}
+
+#reservationsSection .reservations-flex-separator {
+  flex: 0.35;
+}
+
+
+#reservationsSection article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reservationsSection article form {
+  flex: 1;
+}
+
+
+#reservationsSection article form .form-row {
+  margin: 35px 0
+}
+
+#reservationsSection article form .form-row label {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+#reservationsSection article form .form-row input, 
+#reservationsSection article form .form-row select, 
+#reservationsSection article form .form-row button[type="submit"] {
+  width: 100%;
+}
+
+
+
+
+
+#reservationsSection article .confirmation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 50px 0;
+}
+
+
+
+
+/* **************************
+ * RESPONSIVE MEDIA QUERIES *
+ ************************** */
+
+/*
+ * DEVICE: Desktops
+ * SCREEN: 1281px to higher resolution desktops
+ */
+ @media (min-width: 1281px) {
+
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Laptops, Desktops
+ * SCREEN: B/w 1025px to 1280px
+ */
+ @media (min-width: 1025px) and (max-width: 1280px) {
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Tablets, Ipads
+ * SCREEN: B/w 768px to 1024px
+ */
+ @media (min-width: 768px) and (max-width: 1024px) {
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Low Resolution Tablets, Mobiles (Landscape)
+ * SCREEN: B/w 481px to 767px
+ */
+ @media (min-width: 481px) and (max-width: 767px) {
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ * DEVICE: Most of the Smartphones Mobiles (Portrait)
+ * SCREEN: 480px to lower resolution mobiles
+ */
+ @media (max-width: 480px) {
+ 
+ }

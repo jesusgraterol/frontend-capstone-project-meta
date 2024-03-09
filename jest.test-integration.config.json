@@ -1,4 +1,0 @@
-{
-  "verbose": true,
-  "testRegex": "(/__tests__/.*|(\\.|/)(test-integration|spec-integration))\\.[jt]sx?$"
-}
